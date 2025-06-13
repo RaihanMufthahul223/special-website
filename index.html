@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise Pixel Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <img src="img/audrey.jpg" alt="Gambar Pixel" class="pixel-image" />
+      <h1 class="pixel-text">Selamat, Audrey!</h1>
+      <p class="pixel-text">Kamu telah menyelesaikan sidang D3! 🎉</p>
+      <button class="pixel-button" id="button">Klik Aku!</button>
+      <p id="message" class="hidden pixel-text">
+        Bersuaralah untukmu jiwa yang dibungkam, Audrey sang cahaya kebenaran <a href="https://youtu.be/dQw4w9WgXcQ?si=7cUn3A_s49OxDXyW">krahhh</a>
+      </p>
+      <button class="pixel-button surprise-btn" onclick="showSurprise()">
+        Letter for Audrey
+      </button>
+    </div>
+
+    <div id="surprise-container" class="hidden surprise-container">
+       <p class="pixel-text">Lagu yang menggambarkan dirimu</p>
+      <audio controls>
+        <source src="audio/11 The Adams - Timur.mp3" type="audio/mp3" />
+        Browsermu tidak mendukung pemutar audio.
+      </audio>
+
+      <h4 class="pixel-text">Letter For Audrey</h4>
+
+      <p class="pixel-text line-height" style="text-align: justify;">
+        Selamat ya kamu telah menyelesaikan sidang D3 mu itu, aku sangat bangga padamu. Jangan pernah merasa sendiri Audrey yaa, masih ada aku disini yang akan selalu mendukungmu dan mendoakan yang terbaik untukmu. Aku sangat beruntung bisa kenal dirimu, kamu adalah orang yang berarti dalam hidupku. Semoga akupun bisa menjadi orang yang berarti buat kamu. Dan terakhir semoga dengan aku ciptakan ini, bisa mengisi kekosongan dalam hidupmu drey.
+      </p>
+      <p class="pixel-text" style="text-align: right;">Salam hangat, Raihan Mufthahul.</p>
+      <button class="pixel-button" onclick="closeSurprise()">Tutup</button>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p class="pixel-text">RoboClone-44468</p>
+        <img src="img/gambar.jpg" alt="Gambar Pixel" class="pixel-image" />
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-text" class="line-height"></p>
+        <button onclick="closePopup()">Masuk</button>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
